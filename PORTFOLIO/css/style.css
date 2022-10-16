@@ -1,0 +1,242 @@
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */ 
+.header_area
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.header_area.sticky
+{
+    background: var(--color-blanco);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+    color:var(--color-blanco);
+    font-weight:  700;
+    font-size:  2em;
+    text-decoration: none;
+}
+
+.header_area.sticky .main-menu .navbar .navbar-brand{
+    color:var(--color-titulo);
+}
+
+.header_area .main-menu .navbar .navbar-brand span{
+    color: var(--color-rojo);
+}
+
+.header_area .main-menu .navbar{
+    padding: 0rem 0rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--color-blanco);
+}
+
+.header_area.sticky .main-menu .nav-item .nav-link{
+    color: var(--color-titulo);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--color-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--color-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+
+/* BANNER*/
+.site-main .site-banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.site-main .site-banner .site-title{
+    color: var(--color-blanco);
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 50%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+/* .site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+} */
+
+/* ABOUT */
+.site-main .about-area
+{
+    padding: 10rem;
+}
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img{
+    padding: 2rem;
+}
+
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* SKILLS*/
+.site-main .skills-area{
+    padding: 10rem;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.site-main .skills-area .skills-title{
+    padding: 0 0rem 0rem;
+}
+
+.site-main .skills-area .skills-title h1{
+    font-size: 35px;
+}
+
+.row
+{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-main .skills-area .skills .skills-img-back img
+{
+    width: 100%;
+    margin: 5rem 0 5rem;
+}
+
+.site-main .skills-area .skills .skills-img-front img
+{
+    width: 100%;
+    margin: 5rem 0 5rem;
+    padding: 0 1em;
+}
+
+.site-main .skills-area .skills .skills-img-plant img
+{
+    width: 100%; 
+    margin: 2rem 0 2.4rem;
+    padding: 0 2em;
+}
+.site-main > .skills-area .skills{
+    background: rgba(248, 252, 253, 0.973); 
+    padding: 2rem 0rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease; 
+}
+
+.site-main > .skills-area .skills:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/*WORK*/
+.site-main .work-area{
+    padding: 8rem;
+     position: relative; 
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.site-main .work-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .work-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .work-area .grid .our-work > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .work-area .grid .our-work .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
